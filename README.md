@@ -15,8 +15,8 @@ clicking the Download Zip button in the right sidebar.
 
 ## Requirements
 
-The `instantcloud` program requires the JSON parsing library (json-simple)[http://code.google.com/p/json-simple/],
-which is licensed under the Apache 2.0 license. See (this page)[https://github.com/fangyidong/json-simple/blob/master/LICENSE.txt] for more information on the json-simple license.
+The `instantcloud` program requires the JSON parsing library [json-simple](http://code.google.com/p/json-simple/),
+which is licensed under the Apache 2.0 license. See [this page](https://github.com/fangyidong/json-simple/blob/master/LICENSE.txt) for more information on the json-simple license.
 
 The json-simple jar file is included in this repository. However you need to make sure this jar file is
 in your CLASSPATH.
@@ -137,10 +137,3 @@ Machine name:  ec2-54-85-186-203.compute-1.amazonaws.com
 
 You can use the `InstantCloudClient` class within your own Java programs to make
 API calls.
-
-Here is a sample Java application, for Gurobi 6.0.5 that uses the `InstantCloudClient`
-class to solve a MIP on a Instant Cloud machine.
-
-```
-
-```
