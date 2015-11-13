@@ -1,4 +1,6 @@
-class InstantCloudMachine {
+package com.gurobi.cloud.model;
+
+public class InstantCloudMachine {
   public String machineId;
   public String state;
   public String DNSName;

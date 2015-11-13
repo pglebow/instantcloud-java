@@ -1,3 +1,9 @@
+package com.gurobi.cloud;
+
+import com.gurobi.cloud.client.InstantCloudClient;
+import com.gurobi.cloud.model.InstantCloudLicense;
+import com.gurobi.cloud.model.InstantCloudMachine;
+
 public class InstantCloud {
 
   private static void printLicenses(InstantCloudLicense[] licenses) {

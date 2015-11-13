@@ -1,1 +1,1 @@
-java -classpath ".;%cd%\json-simple-1.1.1.jar" InstantCloud %*
+java -jar build\libs\instantcloud-java.jar %*

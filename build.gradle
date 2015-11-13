@@ -1,0 +1,19 @@
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+}
+
+jar {
+  manifest { 
+    attributes "Main-Class": "com.gurobi.cloud.InstantCloud"
+  }  
+
+  from {
+    configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+  }
+}
+
+dependencies {
+    compile('com.googlecode.json-simple:json-simple:1.1.1')
+}

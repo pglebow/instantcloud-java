@@ -1,25 +1,30 @@
-import java.net.*;
-import java.io.*;
+package com.gurobi.cloud.client;
 
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLEncoder;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.security.SignatureException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Formatter;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TimeZone;
 
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import java.util.Date;
-import java.util.TimeZone;
-import java.text.SimpleDateFormat;
-import java.text.DateFormat;
-
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+
+import com.gurobi.cloud.model.InstantCloudLicense;
+import com.gurobi.cloud.model.InstantCloudMachine;
 
 
 public class InstantCloudClient {
